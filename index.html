@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تقرير ALA Academy التنافسي — ألمانيا</title>
+  <style>
+    @page { size: A4; margin: 14mm 12mm 13mm; }
+    :root { --ink:#102a43; --muted:#5b6b7a; --brand:#087f5b; --brand-soft:#e8f7f0; --line:#dbe5ec; --warn:#fff3cd; --danger:#fce8e6; --blue:#eaf3ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#fff; font-family: Arial, "Segoe UI", sans-serif; font-size:10.3pt; line-height:1.55; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-size:25pt; line-height:1.22; margin-bottom:7px; }
+    h2 { font-size:16pt; margin:24px 0 8px; padding-right:10px; border-right:4px solid var(--brand); color:#0c503c; }
+    h3 { font-size:11.5pt; margin:15px 0 6px; }
+    .cover { min-height:250px; padding:26px 28px; border-radius:16px; color:#fff; background:linear-gradient(135deg,#0b2b21,#087f5b); }
+    .cover p { font-size:12pt; color:#e6fff5; max-width:580px; }
+    .meta { margin-top:24px; font-size:9.5pt; color:#c7eee0; }
+    .intro { margin:15px 0 7px; padding:12px 14px; border-radius:8px; background:var(--brand-soft); }
+    .note { padding:10px 12px; margin:10px 0; border-radius:7px; border-right:4px solid #e9a400; background:var(--warn); }
+    .key { padding:10px 12px; margin:10px 0; border-radius:7px; border-right:4px solid #2582c4; background:var(--blue); }
+    table { width:100%; border-collapse:collapse; margin:8px 0 16px; font-size:8.8pt; page-break-inside:auto; }
+    thead { display:table-header-group; }
+    tr { page-break-inside:avoid; page-break-after:auto; }
+    th { background:#0f684e; color:#fff; text-align:right; font-weight:700; padding:8px; vertical-align:top; }
+    td { padding:8px; vertical-align:top; border:1px solid var(--line); }
+    tbody tr:nth-child(even) { background:#f7fafb; }
+    .status { display:inline-block; border-radius:999px; padding:2px 6px; font-size:8pt; font-weight:700; white-space:nowrap; }
+    .done { color:#096b49; background:#d9f5e8; }
+    .partial { color:#8a5b00; background:#fff0c2; }
+    .prototype { color:#9d3030; background:#ffe0df; }
+    .p0 { color:#8c2222; font-weight:700; } .p1 { color:#8a5b00; font-weight:700; } .p2 { color:#1c5f9b; font-weight:700; }
+    ul { margin:5px 0; padding-right:19px; }
+    li { margin:2px 0; }
+    .footer { margin-top:18px; padding-top:8px; border-top:1px solid var(--line); color:var(--muted); font-size:8.3pt; }
+    .sources { font-size:8.5pt; color:var(--muted); }
+    .sources a { color:#075f47; text-decoration:none; }
+    .pagebreak { page-break-before:always; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <h1>ALA Academy<br>تقرير المزايا وخطة المنافسة في ألمانيا</h1>
+    <p>تقييم تقني وتجاري لما هو موجود فعليًا في المنتج، ما يحتاج إصلاحًا، وما يلزم لبناء موقع تنافسي أمام منصات التدريب المهني الألمانية.</p>
+    <p class="meta">إعداد: تحليل الكود الحالي + مراجعة المنافسين الرسميين<br>التاريخ: ٦ أكتوبر ٢٠٢٦</p>
+  </section>
+
+  <div class="intro"><strong>الخلاصة التنفيذية:</strong> نواة ALA قوية في تشغيل الأكاديمية والجلسات الحية، لكن التفوق التنافسي لا يأتي من “الكورسات” وحدها. الفرصة الأقوى هي تحويل التعلم العملي إلى <strong>سجل مهارة موثّق</strong> يصل الطالب بالشركات. قبل تسويق المزايا، يجب فصل الجاهز فعلًا عن الواجهات التجريبية.</div>
+
+  <h2>الجدول الأول: ما لدينا الآن وما يحتاج إصلاحًا</h2>
+  <table>
+    <thead><tr><th style="width:22%">المجال</th><th style="width:31%">الموجود فعليًا</th><th style="width:13%">الحالة</th><th style="width:34%">التحسين المطلوب</th></tr></thead>
+    <tbody>
+      <tr><td>إدارة الأكاديمية</td><td>إدارة الطلاب، المدربين، الدورات، التصنيفات، طلبات الالتحاق، المستخدمين والأدوار.</td><td><span class="status done">منفّذ</span></td><td>إضافة مجموعات/Cohorts حقيقية وربط الطالب بأكثر من مسار، بدل أن تكون رحلة الطالب مبنية أساسًا على طلب التحاق واحد.</td></tr>
+      <tr><td>حوكمة المحتوى</td><td>مسار اعتماد للدورة: draft → مراجعة → اعتماد المدرب → نشر، مع رفض وإلغاء نشر.</td><td><span class="status done">منفّذ</span></td><td>إضافة versioning للمحتوى، تاريخ التغييرات، واعتماد تلقائي/تنبيهات للمراجعين.</td></tr>
+      <tr><td>الفصل المباشر</td><td>غرفة WebRTC خاصة: فيديو وصوت، waiting room، إدارة مضيف، مشاركة شاشة، دردشة، رفع يد، reactions، captions، تأثيرات خلفية وتسجيل محلي.</td><td><span class="status done">منفّذ</span></td><td>التسجيل حاليًا محلي على جهاز المستخدم فقط. نحتاج تسجيلًا سحابيًا، حضورًا تلقائيًا من الغرفة، جدولة وربط Calendar، وبنية SFU/Redis للتوسع بدل mesh وخادم واحد.</td></tr>
+      <tr><td>الحضور والتقارير</td><td>جلسات صفية، تسجيل حضور، وتقارير للتسجيل والحضور وأداء المدرب.</td><td><span class="status done">منفّذ</span></td><td>ربط الحضور الفعلي بغرفة الـLive، إنذارات الغياب، تقارير Cohort قابلة للتصدير، ولوحة خطر الانسحاب مبنية على بيانات حقيقية.</td></tr>
+      <tr><td>المحتوى والاختبارات</td><td>دروس، فيديو، مرفقات، وترتيب محتوى؛ منشئ quizzes مع أسئلة وخيارات ودرجة نجاح.</td><td><span class="status partial">جزئي</span></td><td>لا توجد محاولات طالب أو تصحيح أو درجات محفوظة أو منع/فتح التقدم فعليًا. نحتاج QuizAttempt وGradebook وAssignments وProject submissions وRubrics.</td></tr>
+      <tr><td>الشهادات</td><td>إصدار شهادة PDF وكود فريد.</td><td><span class="status partial">جزئي</span></td><td>إنشاء صفحة تحقق عامة مع QR وتوقيع/رابط غير قابل للتخمين، وقواعد إصدار تلقائية مرتبطة بالنجاح والحضور والمشروع.</td></tr>
+      <tr><td>التعلم والتقدم</td><td>واجهات للبرنامج والتقدم ومشغل درس.</td><td><span class="status prototype">واجهة تجريبية</span></td><td>تحويلها إلى بيانات حقيقية: إتمام الدروس، وقت المشاهدة، فتح المحتوى وفق الشروط، resume playback، وخطة تعلم شخصية.</td></tr>
+      <tr><td>التقييمات والتحليلات</td><td>تصميمات قوية للتقييمات وAnalytics.</td><td><span class="status prototype">بيانات ثابتة</span></td><td>ربط جميع البطاقات والرسوم بمخزن بيانات فعلي؛ لا تُسوّق أرقام النجاح أو retention قبل وجود مصدر موثوق لها.</td></tr>
+      <tr><td>المساعد الذكي والإشعارات</td><td>Assistant بردود scripted وdrawer إشعارات تجريبي.</td><td><span class="status prototype">Prototype</span></td><td>مساعد RAG مرتبط بصلاحية المستخدم وبياناته، مع إشعارات حقيقية عبر البريد وداخل النظام وتفضيلات المستخدم.</td></tr>
+      <tr><td>الأمان والتشغيل</td><td>صلاحيات، سجل نشاط، JWT، Redis، health/readiness، Docker وGraphQL.</td><td><span class="status done">منفّذ</span></td><td>2FA، سياسة احتفاظ وحذف البيانات، consent logs، نسخ احتياطي/استعادة، مراقبة مركزية، واختبارات وصول وأمن قبل التوسع.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note"><strong>تنبيه تسويقي مهم:</strong> لا يتم تقديم AI Assistant أو الإشعارات أو تقييمات الطالب أو التحليلات كخدمة مكتملة الآن؛ الكود يعرّفها صراحة كـ prototype أو بيانات ثابتة.</div>
+
+  <h2 class="pagebreak">الجدول الثاني: ما ينقصنا للمنافسة في ألمانيا</h2>
+  <table>
+    <thead><tr><th style="width:22%">الفجوة</th><th style="width:24%">لماذا تؤثر في ألمانيا</th><th style="width:34%">ما نبنيه بالتحديد</th><th style="width:20%">الأولوية</th></tr></thead>
+    <tbody>
+      <tr><td>رحلة الطالب القابلة للقياس</td><td>المنصات المهنية تبيع نتيجة موثقة، لا فيديوهات فقط.</td><td>Progress، محاولات الاختبارات، واجبات، مشاريع، مراجعة مدرب، درجات، deadlines، وخطة إعادة المحاولة.</td><td class="p0">P0 — قبل أي توسع</td></tr>
+      <tr><td>سجل مهارة موثّق</td><td>هو التفوق الممكن لـALA أمام catalog كبير وغير شخصي.</td><td>Talent Passport: مهارات مثبتة، روابط مشاريع، حضور، تقييمات، ملاحظات مدرب، شهادة QR، ومشاركة بموافقة الطالب.</td><td class="p0">P0 — الميزة الفارقة</td></tr>
+      <tr><td>بوابة الشركاء والشركات</td><td>الشركات لا تشتري “دورة” فقط؛ تريد مرشحين مناسبين.</td><td>Company portal للبحث والـshortlist وطلب مقابلة وfeedback على الخريجين، مع موافقة خصوصية صريحة.</td><td class="p0">P0 — مصدر الإيراد</td></tr>
+      <tr><td>Bildungsgutschein / AZAV</td><td>التمويل العام حتى 100% جزء أساسي من قرار الشراء في السوق.</td><td>مسار أهلية وحجز استشارة، رفع مستندات، تتبع حالة الطلب، قوالب عروض، وربط لاحق مع عمليات AZAV المعتمدة.</td><td class="p1">P1 — تجاري حاسم</td></tr>
+      <tr><td>ألمانية كاملة وإتاحة</td><td>المنتج الحالي يغلب عليه الإنجليزية بينما الجمهور والجهات الرسمية ألمانية.</td><td>i18n ألماني أولًا، ثم عربي/إنجليزي للوافدين؛ WCAG، captions/transcripts، واجهة RTL سليمة، ورسائل/عقود ألمانية.</td><td class="p1">P1</td></tr>
+      <tr><td>Career Services</td><td>المنافسون يبيعون coaching، CV، مقابلات ومساندة توظيف.</td><td>حجز جلسات coach، CV/LinkedIn checklist، job-readiness score، تتبع طلبات العمل وربطها بالمشاريع.</td><td class="p1">P1</td></tr>
+      <tr><td>موثوقية Live والتكاملات</td><td>التدريب الحي واسع النطاق يحتاج اعتمادية وتسجيلات وجدولة.</td><td>SFU، تسجيل سحابي، attendance آلي، Google/Outlook calendar، بريد وتذكيرات، وتكاملات HR/ATS عبر webhooks.</td><td class="p1">P1</td></tr>
+      <tr><td>الخصوصية والامتثال</td><td>بيانات الأداء والتوظيف حساسة في بيئة GDPR.</td><td>موافقة قابلة للسحب، data export/deletion، data residency EU/DE، سجل معالجة، DPA، و2FA للإدارة والشركات.</td><td class="p1">P1</td></tr>
+      <tr><td>مكتبة تعلم ذاتية</td><td>المنافسون يقدّمون مرونة بجانب الجلسات الحية.</td><td>مسارات self-paced، بحث داخل المحتوى، ملاحظات، bookmarks، تطبيق موبايل/offline حسب الأولوية.</td><td class="p2">P2</td></tr>
+    </tbody>
+  </table>
+
+  <div class="key"><strong>التموضع المقترح:</strong> «تعلّم AI Automation عملي + مشروع حقيقي + سجل مهارة موثّق + وصول مسؤول للشركات». لا تنافسوا في عدد الكورسات؛ نافسوا في جودة الدليل على المهارة وسرعة التحول إلى وظيفة.</div>
+
+  <h2>الجدول الثالث: المنافسون وما يميّزونهم عن ALA</h2>
+  <table>
+    <thead><tr><th style="width:16%">المنافس</th><th style="width:26%">نموذجه</th><th style="width:33%">ما يميّزه حاليًا عن ALA</th><th style="width:25%">كيف نواجهه</th></tr></thead>
+    <tbody>
+      <tr><td><strong>IU Akademie</strong></td><td>تعليم مهني أونلاين واسع التخصصات، موجه للباحثين عن عمل والموظفين.</td><td>AZAV/Bildungsgutschein، Career وStudy Coaching، مرونة في التعلم، Live Tutoring، أدوات ومزايا للدارس مثل iPad وLinkedIn Learning ومساعد AI.</td><td>لا ننافسهم في اتساع catalog؛ نركز على AI Automation تطبيقي، مجموعات أصغر، مشاريع مراجعة، ومسار شركة/توظيف أسرع.</td></tr>
+      <tr><td><strong>IBB / Viona</strong></td><td>تدريب مهني ممول وLive Online على مستوى ألمانيا.</td><td>خبرة تشغيلية طويلة في الفصول الافتراضية، تمويل، دعم استشاري، مساعدة تقديم وتوظيف، وانتشار واسع.</td><td>نجعل التجربة أكثر حداثة ومرتبطة بالمنتج: Live + progress + portfolio + employer view في نظام واحد، بدل منصة درس منفصلة.</td></tr>
+      <tr><td><strong>StackFuel</strong></td><td>تدريب Data وAI متخصص مع تمويل رسمي.</td><td>AZAV، مسارات Data/AI محددة، Career Service، وعلامات شركات كبيرة وثقة سوقية.</td><td>هو الأقرب تقنيًا. التفوق يكون في automation للشركات: n8n/Make/Power Platform، مشروعات عميل حقيقية، وسجل مواهب قابل للتوظيف.</td></tr>
+      <tr><td><strong>Coursera / برامج IBB الأكاديمية</strong></td><td>مكتبة عالمية وشهادات/محتوى من جامعات وشركات.</td><td>كتالوج ضخم، محتوى معترف به وشراكات مؤسسات، وبعض المسارات الأكاديمية وECTS.</td><td>نبيع الإرشاد المباشر، المجتمع المحلي، والتطبيق على حالات عمل ألمانية بدل محتوى مسجل عام.</td></tr>
+      <tr><td><strong>Udemy Business وما شابهه</strong></td><td>مكتبة مهارات واسعة للشركات والأفراد.</td><td>كمية محتوى كبيرة، سرعة شراء، وتغطية تخصصات كثيرة.</td><td>نحول التعلم إلى outcome: حضور ومشاريع وتقييم ومدرب ثم فرص عمل، لا مجرد completion.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>خطة قرار مختصرة</h2>
+  <ol>
+    <li>أوقفوا أي تسويق يدّعي AI أو analytics أو assessment متكامل قبل ربطه ببيانات حقيقية.</li>
+    <li>ابنوا خلال المرحلة التالية: تقييمات حقيقية + مشاريع + سجل مهارة + تحقق شهادة.</li>
+    <li>ابدؤوا بوابة الشركات بالتوازي؛ هي التي تجعل سجل المهارة ذا قيمة تجارية.</li>
+    <li>بعد ذلك أطلقوا الألمانية الكاملة ومسار التمويل والاستشارة.</li>
+  </ol>
+
+  <div class="footer">
+    <strong>منهجية التقرير:</strong> مراجعة source code وملفات المعمارية/المسارات في مشروع ALA Academy، ومراجعة صفحات المنافسين الرسمية. هذا تقييم منتج تقني وتجاري أولي، وليس شهادة قانونية أو اعتماد AZAV.
+    <div class="sources"><strong>مصادر المنافسين:</strong> <a href="https://www.iu-akademie.de/so-lernst-du-bei-uns/">IU Akademie — Lernen</a> · <a href="https://www.iu-akademie.de/finanzierungsprozess/">IU — Finanzierung</a> · <a href="https://www.ibb.com/info/online-akademie/weiterbildung-von-zu-hause-aus">IBB Online-Akademie</a> · <a href="https://www.ibb.com/weiterbildung/arbeitssuchende">IBB für Arbeitssuchende</a> · <a href="https://stackfuel.com/de/training/">StackFuel Trainings</a>.</div>
+  </div>
+</body>
+</html>
